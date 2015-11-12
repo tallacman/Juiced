@@ -1,4 +1,4 @@
-@media (min-width: $screen-xs-min) { 
+@media (min-width: $screen-xs-min) {
   .container{
 
     // sm, md, lg must be 100% | only xs maintains width
@@ -60,7 +60,7 @@
 
     $i: 12;
     @while $i >= 0 {
-      &>.col-xs-push-#{$i} { 
+      &>.col-xs-push-#{$i} {
         left: ( $i / 12 * 100%);
       }
       $i: $i - 1;
@@ -75,7 +75,7 @@
       flex: 0 1 auto;
       max-width: none;
     }
-   
+
 
   }
 
@@ -129,9 +129,9 @@
 }
 
 // screens are sm
-@media (min-width: $screen-sm-min) { 
+@media (min-width: $screen-sm-min) {
   .container{
-    
+
     &>.col-sm-12 {
       flex: 0 1 100%;
       max-width: 100%;
@@ -198,7 +198,7 @@
 
     $i: 12;
     @while $i >= 0 {
-      &>.col-sm-push-#{$i} { 
+      &>.col-sm-push-#{$i} {
         left: ( $i / 12 * 100%);
       }
       $i: $i - 1;
@@ -213,7 +213,7 @@
       flex: 0 1 auto;
       max-width: none;
     }
-  
+
   }
 
   .sm-card-masonry-4{
@@ -266,7 +266,7 @@
 }
 
 // screens are md
-@media (min-width: $screen-md-min) { 
+@media (min-width: $screen-md-min) {
   .container{
 
     &>.col-md-12 {
@@ -326,23 +326,23 @@
 
     $i: 12;
     @while $i >= 0 {
-      &>.col-md-push-#{$i} { 
+      &>.col-md-push-#{$i} {
         left: ( $i / 12 * 100%);
       }
       $i: $i - 1;
     }
-    
+
     &>.col-md-push-half{
       left: (1 / 12 * 100%) / 2;
     }
-    
+
     &>.col-md-auto{
       width: auto;
       flex: 0 1 auto;
       max-width: none;
     }
 
-    
+
   }
 
   .md-card-masonry-4{
@@ -395,7 +395,7 @@
 }
 
 // screens are desktop
-@media (min-width: $screen-lg-min) { 
+@media (min-width: $screen-lg-min) {
   .container{
 
     &>.col-lg-12 {
@@ -457,7 +457,7 @@
 
     $i: 12;
     @while $i >= 0 {
-      &>.col-lg-push-#{$i} { 
+      &>.col-lg-push-#{$i} {
         left: ( $i / 12 * 100%);
       }
       $i: $i - 1;
