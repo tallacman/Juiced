@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*!
+ * Juiced (http://juicedcss.com)
+ * Copyright 2015 Joey Lea
+ * Licensed under MIT (https://github.com/ovdojoey/Juiced/blob/master/LICENSE)
+*/
+/* 2. Resets  */
+/* 2.A */
+* {
+        box-sizing: border-box;
+}
+html,
+body {
+        margin: 0;
+        padding: 0;
+}
+html[dir="rtl"] {
+        direction: rtl;
+}
+html[dir="ltr"] {
+        direction: ltr;
+}
+
+html{
+        background-color: @page-background-color;
+}
+/* 2.B */
+
+body {
+        font-family: @body-type-font-family;
+        font-size: @body-type-font-size;
+        line-height: @body-type-font-line-height;
+        color: @body-type-font-color;
+}
+
+
+/* 2.C */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+        font-family: @header-type-font-family;
+        font-size: @header-type-font-size;
+        line-height: @header-type-font-line-height;
+        color: @header-type-font-color;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+        color: @light-color;
+        font-size: 60%;
+}
+
+/* 2.D */
+a {
+        touch-action: manipulation;
+}
+a:link {
+        color: @link-color;
+        text-decoration: none;
+}
+a:visited {
+        color: @link-color;
+}
+a:hover,
+a:focus {
+        color: darken(@link-color, 10%);
+}
+a:active {
+        outline: none;
+}
+a.text-decoration-none,
+a.no-text-decoration,
+a.no-t-d {
+        text-decoration: none;
+}
+
+/* 2.E */
+pre {
+        background: @light-color;
+        white-space: pre-line;
+        padding: 12px;
+        border-radius: 3px;
+        font-size: 0.85rem;
+        max-width: 100%;
+        margin-bottom: 2.8rem;
+        position: relative;
+}
+pre:after {
+        content: attr(data-code-type);
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: darken(@light-color, 15%);
+        font-family: sans-serif;
+        font-weight: 900;
+}
+
+/* 2.F */
+blockquote {
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        quotes: "“" "”" "‘" "’";
+}
+blockquote:before {
+        color: @light-color;
+        content: open-quote;
+        font-size: 3em;
+        line-height: 0.1em;
+        margin-right: 0.12em;
+        vertical-align: -0.3em;
+}
+blockquote p {
+        display: inline;
+}
+
+/* 2.G */
+p {
+        margin-bottom: 1.8rem;
+}
+ul.no-style,
+ol.no-style,
+dl.no-style {
+        list-style: none;
+}
+
+/* 3. Components  */
+/* 4. Helper Classes  */
+/* 5. Grid  */
+/* 5. Media Queries  */
